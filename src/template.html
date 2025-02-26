@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+</head>
+
+<body>
+    <div class="sidebar">
+
+        <div class="project-due">
+            <div class="Today">Today</div>
+            <div class="week">This Week</div>
+            <div class="month">This Month</div>
+        </div>
+
+        <div class="projects"> 
+            <!--This is all gonna need to be dyanmic but  have placeholders here?-->
+            <div class="project">
+                <h2>Projects</h2>
+                <div class="todo">Project1</div>
+                <div class="todo">Project2</div>
+                <div class="todo">Project3</div>
+            </div>
+            <div class="project">
+                <h2>Projects</h2>
+                <div class="todo">Project1</div>
+                <div class="todo">Project2</div>
+                <div class="todo">Project3</div>
+            </div>
+            <div class="project">
+                <h2>Projects</h2>
+                <div class="todo">Project1</div>
+                <div class="todo">Project2</div>
+                <div class="todo">Project3</div>
+            </div>
+        </div>
+        <div class="completed">Completed</div>
+    </div>
+
+
+    <div class="content">
+        <div class="todos">
+        <div>
+            <h1 class="heading">Today</h1>
+            <div><button class="addToDo">+ Add Objective</button></div>
+        </div>
+
+        <form class="toDoForm" action="" method="post">
+
+        
+            <div class="titleDiv">
+                <label for="title"></label>
+                <input placeholder="Skidz" type="text" name="title" id="title" required>
+            </div>
+
+            <div class="descriptionDiv">
+                <label for="description"></label>
+                <input placeholder="Do a skid on the main road" type="text" name="description" id="description" >
+            </div>
+
+            <div class="dueDiv">
+                <label for="due"></label>
+                <input type="date" name="due" id="due"> 
+            </div>
+
+            <div class="priorityDiv">
+                <label for="Priority">Priority:</label>
+                <select id="priority" name="priority" aria-placeholder="Urgent">
+                    <option >Non-Urgent</option>
+                    <option>Semi-Urgent</option>
+                    <option selected>Urgent</option>
+                </select>
+            </div>
+            <div>
+                <button class="cancelBtn">Cancel</button>
+                <button class="submitBtn" type="submit"> + Add Objective</button>
+            </div>
+        </form>
+
+        <div class="tasks"></div>
+    </div>
+    </div>
+
+    
+</body>
+
+</html>
